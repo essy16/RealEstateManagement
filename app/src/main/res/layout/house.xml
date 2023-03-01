@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:cardElevation="20dp"
+        app:cardCornerRadius="15dp"
+        android:layout_margin="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/house_1"
+                android:scaleType="centerCrop"/>
+
+
+
+            <TextView
+                android:id="@+id/bedroom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/image"
+                android:text="One Bedroom" />
+
+            <TextView
+                android:id="@+id/cash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bedroom"
+                android:layout_toRightOf="@id/image"
+                android:text="KES 13500/Month"
+                android:textColor="#00ff00" />
+
+            <TextView
+                android:id="@+id/area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cash"
+                android:layout_toRightOf="@id/image"
+                android:text="4th Sunton Street Kasarani" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/area"
+                android:layout_toRightOf="@id/image"
+                android:id="@+id/bedroom_image"
+                android:src="@drawable/bedroom_icon"
+                />
+            <TextView
+                android:id="@+id/bedroom_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bedroom"
+                android:layout_toRightOf="@id/bedroom_image"
+                android:layout_below="@id/area"
+                android:layout_marginLeft="5dp"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/area"
+                android:layout_toRightOf="@id/bedroom_image"
+                android:layout_marginLeft="80dp"
+                android:src="@drawable/kitchen_icon"
+                android:id="@+id/kitchen_image"
+                />
+            <TextView
+                android:id="@+id/kitchen_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kitchen"
+                android:layout_toRightOf="@id/kitchen_image"
+                android:layout_below="@id/area"
+                android:layout_marginLeft="5dp"
+                />
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/bedroom_image"
+                android:layout_toRightOf="@id/image"
+                android:src="@drawable/bathroom_icon"
+                android:id="@+id/bathroom_image"
+                />
+            <TextView
+                android:id="@+id/bathroom_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bathroom"
+                android:layout_toRightOf="@id/bathroom_image"
+                android:layout_below="@id/bedroom_text"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/garden_image"
+                android:layout_toRightOf="@id/bathroom_image"
+                android:layout_marginLeft="80dp"
+                android:src="@drawable/parking_icon"
+                android:id="@+id/parking_image"
+               />
+            <TextView
+                android:id="@+id/garden_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Garden"
+                android:layout_toRightOf="@id/garden_image"
+                android:layout_below="@id/kitchen_text"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                />
+            <ImageView
+                android:id="@+id/garden_image"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/kitchen_image"
+                android:layout_toRightOf="@id/bathroom_image"
+                android:layout_marginLeft="80dp"
+                android:src="@drawable/garden_icon"
+               />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Car Parking"
+                android:layout_toRightOf="@id/garden_image"
+                android:layout_below="@id/garden_text"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                />
+            <ImageView
+                android:id="@+id/balcony_image"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/bathroom_image"
+                android:layout_toRightOf="@id/image"
+                android:src="@drawable/balcon_icon"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Balcony"
+                android:layout_toRightOf="@id/balcony_image"
+                android:layout_below="@id/garden_text"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                />
+
+
+
+
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="15dp">
+
+        <ImageView
+            android:id="@+id/image_house"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/house_1" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardview_image"
+        android:layout_margin="10dp"
+        android:text="Unity West, the project’s first phase, is sold out and completed. The second phase, with 640 2- and 3-bedroom apartments is selling fast.
+
+Unity Homes offers all the conveniences of Tatu City, along with amenities exclusively for residents, including a badminton court, a mini basketball court and a playground. Future plans include a two-acre park, infinity pool, gym, coffee shop and commercial centre.
+
+Unity West at Tatu City is the perfect home for individuals and young families, or for investors looking to make amazing returns."
+        android:textColor="@color/black" />
+
+    <LinearLayout
+        android:id="@+id/layout_land"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/description"
+        android:layout_margin="10dp"
+
+        android:background="@drawable/oval">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/land" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="50 by 100" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_beds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/description"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/layout_land"
+        android:background="@drawable/oval">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/bedroom_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="3 beds" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_balcony"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_land"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/layout_land"
+        android:background="@drawable/oval">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/balcon_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="balcony" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_kitchen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_land"
+        android:layout_margin="10dp"
+        android:background="@drawable/oval">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/kitchen_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Kitchen" />
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainFragment"
+    android:background="@drawable/bg">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/search_view"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/oval"
+            android:hint="Search Here" />
+        <Button
+            android:layout_below="@id/search_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buy a home"
+            android:id="@+id/buy_btn"/>
+        <Button
+            android:layout_below="@id/search_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rent a home"
+            android:layout_alignParentRight="true"
+            android:layout_alignRight="@id/buy_btn"
+            android:id="@+id/rent_btn"/>
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="570dp"
+        android:layout_below="@id/buy_btn"
+        tools:listitem="@layout/house"/>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recycler_view"
+            android:layout_alignParentRight="true"
+            app:srcCompat="@drawable/plus"
+            app:tint="@null"/>
+    </RelativeLayout>
+
+
+
+</FrameLayout>
