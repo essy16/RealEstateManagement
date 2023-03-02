@@ -35,6 +35,7 @@ class HouseAdapter(private val houseList: ArrayList<House>) :
     override fun onBindViewHolder(holder: HouseViewHolder, position: Int) {
         val currentItem=houseList[position]
         holder.image.setImageResource(currentItem.image)
+
         holder.bedroom.text=currentItem.bedroom
         holder.pricing.text=currentItem.price
         holder.place.text=currentItem.price
